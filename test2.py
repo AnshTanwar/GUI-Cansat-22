@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1716, 1030)
+        MainWindow.resize(1716, 1031)
         MainWindow.setStyleSheet("background-color:#303030")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -60,11 +60,36 @@ class Ui_MainWindow(object):
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.frame_3)
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
         self.NameSymbol = QtWidgets.QFrame(self.frame_3)
-        self.NameSymbol.setMinimumSize(QtCore.QSize(400, 66))
-        self.NameSymbol.setStyleSheet("background-color:grey")
+        self.NameSymbol.setMinimumSize(QtCore.QSize(237, 66))
+        self.NameSymbol.setStyleSheet("background-color:rgb(89, 89, 89);")
         self.NameSymbol.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.NameSymbol.setFrameShadow(QtWidgets.QFrame.Raised)
         self.NameSymbol.setObjectName("NameSymbol")
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.NameSymbol)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.label_7 = QtWidgets.QLabel(self.NameSymbol)
+        self.label_7.setMinimumSize(QtCore.QSize(10, 0))
+        self.label_7.setMaximumSize(QtCore.QSize(57, 49))
+        self.label_7.setText("")
+        self.label_7.setPixmap(QtGui.QPixmap("icons/space-shuttle.png"))
+        self.label_7.setScaledContents(True)
+        self.label_7.setAlignment(QtCore.Qt.AlignBottom|QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft)
+        self.label_7.setObjectName("label_7")
+        self.horizontalLayout_4.addWidget(self.label_7)
+        self.verticalLayout_11 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_11.setContentsMargins(-1, 11, -1, 19)
+        self.verticalLayout_11.setSpacing(1)
+        self.verticalLayout_11.setObjectName("verticalLayout_11")
+        self.label_5 = QtWidgets.QLabel(self.NameSymbol)
+        self.label_5.setStyleSheet("border:none")
+        self.label_5.setObjectName("label_5")
+        self.verticalLayout_11.addWidget(self.label_5)
+        self.label_6 = QtWidgets.QLabel(self.NameSymbol)
+        self.label_6.setStyleSheet("border:none;\n"
+"")
+        self.label_6.setObjectName("label_6")
+        self.verticalLayout_11.addWidget(self.label_6)
+        self.horizontalLayout_4.addLayout(self.verticalLayout_11)
         self.horizontalLayout_5.addWidget(self.NameSymbol, 0, QtCore.Qt.AlignLeft)
         self.Commands = QtWidgets.QFrame(self.frame_3)
         self.Commands.setMinimumSize(QtCore.QSize(900, 90))
@@ -77,7 +102,10 @@ class Ui_MainWindow(object):
         self.frame_31 = QtWidgets.QFrame(self.Commands)
         self.frame_31.setMinimumSize(QtCore.QSize(46, 95))
         self.frame_31.setSizeIncrement(QtCore.QSize(0, 3))
-        self.frame_31.setStyleSheet("background-color:rgb(89, 89, 89)")
+        self.frame_31.setStyleSheet("background-color:rgb(89, 89, 89);\n"
+"border: solid grey;\n"
+"border-width: 0px 3px 0px 3px\n"
+"")
         self.frame_31.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_31.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_31.setObjectName("frame_31")
@@ -86,7 +114,7 @@ class Ui_MainWindow(object):
         self.pushButton_17 = QtWidgets.QPushButton(self.frame_31)
         self.pushButton_17.setMinimumSize(QtCore.QSize(49, 41))
         self.pushButton_17.setBaseSize(QtCore.QSize(9, 0))
-        self.pushButton_17.setStyleSheet("border: 8px solid white;\n"
+        self.pushButton_17.setStyleSheet("border: 6px solid white;\n"
 "border-radius:12px\n"
 "")
         self.pushButton_17.setText("")
@@ -99,13 +127,16 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.label_16.setFont(font)
+        self.label_16.setStyleSheet("border:none")
         self.label_16.setObjectName("label_16")
         self.verticalLayout_19.addWidget(self.label_16, 0, QtCore.Qt.AlignBottom)
         self.horizontalLayout_6.addWidget(self.frame_31)
         self.frame_30 = QtWidgets.QFrame(self.Commands)
         self.frame_30.setMinimumSize(QtCore.QSize(46, 95))
         self.frame_30.setSizeIncrement(QtCore.QSize(0, 3))
-        self.frame_30.setStyleSheet("background-color:rgb(89, 89, 89)")
+        self.frame_30.setStyleSheet("background-color:rgb(89, 89, 89);\n"
+"border: solid grey;\n"
+"border-width: 0px 3px 0px 0px")
         self.frame_30.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_30.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_30.setObjectName("frame_30")
@@ -114,8 +145,8 @@ class Ui_MainWindow(object):
         self.pushButton_16 = QtWidgets.QPushButton(self.frame_30)
         self.pushButton_16.setMinimumSize(QtCore.QSize(49, 41))
         self.pushButton_16.setBaseSize(QtCore.QSize(9, 0))
-        self.pushButton_16.setStyleSheet("border: 8px solid white;\n"
-"border-radius:12px\n"
+        self.pushButton_16.setStyleSheet("border: 6px solid white;\n"
+"border-radius:12px;\n"
 "")
         self.pushButton_16.setText("")
         self.pushButton_16.setIconSize(QtCore.QSize(32, 25))
@@ -127,13 +158,16 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.label_15.setFont(font)
+        self.label_15.setStyleSheet("border:none")
         self.label_15.setObjectName("label_15")
         self.verticalLayout_18.addWidget(self.label_15, 0, QtCore.Qt.AlignBottom)
         self.horizontalLayout_6.addWidget(self.frame_30)
         self.frame_26 = QtWidgets.QFrame(self.Commands)
         self.frame_26.setMinimumSize(QtCore.QSize(46, 95))
         self.frame_26.setSizeIncrement(QtCore.QSize(0, 3))
-        self.frame_26.setStyleSheet("background-color:rgb(89, 89, 89)")
+        self.frame_26.setStyleSheet("background-color:rgb(89, 89, 89);\n"
+"border: solid grey;\n"
+"border-width: 0px 3px 0px 0px")
         self.frame_26.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_26.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_26.setObjectName("frame_26")
@@ -142,7 +176,7 @@ class Ui_MainWindow(object):
         self.pushButton_11 = QtWidgets.QPushButton(self.frame_26)
         self.pushButton_11.setMinimumSize(QtCore.QSize(49, 41))
         self.pushButton_11.setBaseSize(QtCore.QSize(9, 0))
-        self.pushButton_11.setStyleSheet("border: 8px solid white;\n"
+        self.pushButton_11.setStyleSheet("border: 6px solid white;\n"
 "border-radius:12px\n"
 "")
         self.pushButton_11.setText("")
@@ -155,13 +189,16 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.label_11.setFont(font)
+        self.label_11.setStyleSheet("border:none")
         self.label_11.setObjectName("label_11")
         self.verticalLayout_14.addWidget(self.label_11, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignBottom)
         self.horizontalLayout_6.addWidget(self.frame_26)
         self.frame_27 = QtWidgets.QFrame(self.Commands)
         self.frame_27.setMinimumSize(QtCore.QSize(46, 95))
         self.frame_27.setSizeIncrement(QtCore.QSize(0, 3))
-        self.frame_27.setStyleSheet("background-color:rgb(89, 89, 89)")
+        self.frame_27.setStyleSheet("background-color:rgb(89, 89, 89);\n"
+"border: solid grey;\n"
+"border-width: 0px 3px 0px 0px")
         self.frame_27.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_27.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_27.setObjectName("frame_27")
@@ -170,7 +207,7 @@ class Ui_MainWindow(object):
         self.pushButton_13 = QtWidgets.QPushButton(self.frame_27)
         self.pushButton_13.setMinimumSize(QtCore.QSize(49, 41))
         self.pushButton_13.setBaseSize(QtCore.QSize(9, 0))
-        self.pushButton_13.setStyleSheet("border: 8px solid white;\n"
+        self.pushButton_13.setStyleSheet("border: 6px solid white;\n"
 "border-radius:12px\n"
 "")
         self.pushButton_13.setText("")
@@ -183,13 +220,16 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.label_12.setFont(font)
+        self.label_12.setStyleSheet("border:none")
         self.label_12.setObjectName("label_12")
         self.verticalLayout_15.addWidget(self.label_12, 0, QtCore.Qt.AlignBottom)
         self.horizontalLayout_6.addWidget(self.frame_27)
         self.frame_29 = QtWidgets.QFrame(self.Commands)
         self.frame_29.setMinimumSize(QtCore.QSize(46, 95))
         self.frame_29.setSizeIncrement(QtCore.QSize(0, 3))
-        self.frame_29.setStyleSheet("background-color:rgb(89, 89, 89)")
+        self.frame_29.setStyleSheet("background-color:rgb(89, 89, 89);\n"
+"border: solid grey;\n"
+"border-width: 0px 3px 0px 0px")
         self.frame_29.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_29.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_29.setObjectName("frame_29")
@@ -198,7 +238,7 @@ class Ui_MainWindow(object):
         self.pushButton_15 = QtWidgets.QPushButton(self.frame_29)
         self.pushButton_15.setMinimumSize(QtCore.QSize(49, 41))
         self.pushButton_15.setBaseSize(QtCore.QSize(9, 0))
-        self.pushButton_15.setStyleSheet("border: 8px solid white;\n"
+        self.pushButton_15.setStyleSheet("border: 6px solid white;\n"
 "border-radius:12px\n"
 "")
         self.pushButton_15.setText("")
@@ -211,13 +251,16 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.label_14.setFont(font)
+        self.label_14.setStyleSheet("border:none")
         self.label_14.setObjectName("label_14")
         self.verticalLayout_17.addWidget(self.label_14, 0, QtCore.Qt.AlignBottom)
         self.horizontalLayout_6.addWidget(self.frame_29)
         self.frame_28 = QtWidgets.QFrame(self.Commands)
         self.frame_28.setMinimumSize(QtCore.QSize(46, 95))
         self.frame_28.setSizeIncrement(QtCore.QSize(0, 3))
-        self.frame_28.setStyleSheet("background-color:rgb(89, 89, 89)")
+        self.frame_28.setStyleSheet("background-color:rgb(89, 89, 89);\n"
+"border: solid grey;\n"
+"border-width: 0px 3px 0px 0px")
         self.frame_28.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_28.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_28.setObjectName("frame_28")
@@ -226,7 +269,7 @@ class Ui_MainWindow(object):
         self.pushButton_14 = QtWidgets.QPushButton(self.frame_28)
         self.pushButton_14.setMinimumSize(QtCore.QSize(49, 41))
         self.pushButton_14.setBaseSize(QtCore.QSize(9, 0))
-        self.pushButton_14.setStyleSheet("border: 8px solid white;\n"
+        self.pushButton_14.setStyleSheet("border: 6px solid white;\n"
 "border-radius:12px\n"
 "")
         self.pushButton_14.setText("")
@@ -239,13 +282,14 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.label_13.setFont(font)
+        self.label_13.setStyleSheet("border:none")
         self.label_13.setObjectName("label_13")
         self.verticalLayout_16.addWidget(self.label_13, 0, QtCore.Qt.AlignBottom)
         self.horizontalLayout_6.addWidget(self.frame_28)
         self.horizontalLayout_5.addWidget(self.Commands)
         self.Packetstime = QtWidgets.QFrame(self.frame_3)
-        self.Packetstime.setMinimumSize(QtCore.QSize(334, 70))
-        self.Packetstime.setStyleSheet("background-color:#2A2A2A")
+        self.Packetstime.setMinimumSize(QtCore.QSize(301, 70))
+        self.Packetstime.setStyleSheet("background-color:rgb(42, 42, 42)")
         self.Packetstime.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.Packetstime.setFrameShadow(QtWidgets.QFrame.Raised)
         self.Packetstime.setObjectName("Packetstime")
@@ -473,12 +517,14 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_16.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#b6b6b6;\">SIM Enable</span></p></body></html>"))
-        self.label_15.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#b6b6b6;\">SIM Enable</span></p></body></html>"))
+        self.label_5.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:9pt; font-weight:600; color:#2b2b2b;\">Team: NSUT</span></p></body></html>"))
+        self.label_6.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:9pt; font-weight:600; color:#2b2b2b;\">Team Id: #4098</span></p></body></html>"))
+        self.label_16.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#b6b6b6;\">Set Time</span></p></body></html>"))
+        self.label_15.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#b6b6b6;\">Callibrate</span></p></body></html>"))
         self.label_11.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#b6b6b6;\">SIM Enable</span></p></body></html>"))
-        self.label_12.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#b6b6b6;\">SIM Enable</span></p></body></html>"))
-        self.label_14.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#b6b6b6;\">SIM Enable</span></p></body></html>"))
-        self.label_13.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#b6b6b6;\">SIM Enable</span></p></body></html>"))
+        self.label_12.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#b6b6b6;\">SIM Disable</span></p></body></html>"))
+        self.label_14.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#b6b6b6;\">SIM Activate</span></p></body></html>"))
+        self.label_13.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#b6b6b6;\">On/Off</span></p></body></html>"))
         self.label_2.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Team ID: _____ </span></p></body></html>"))
         self.label_3.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Packet: _____</span></p></body></html>"))
         self.label_4.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Time: _____</span></p></body></html>"))
