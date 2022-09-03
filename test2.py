@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1716, 1031)
+        MainWindow.resize(1716, 1030)
         MainWindow.setStyleSheet("background-color:#303030")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -326,7 +326,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1629, 1589))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, -768, 1629, 1589))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -471,7 +471,7 @@ class Ui_MainWindow(object):
         self.frame_13.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_13.setObjectName("frame_13")
         self.label = QtWidgets.QLabel(self.frame_13)
-        self.label.setGeometry(QtCore.QRect(70, 20, 591, 611))
+        self.label.setGeometry(QtCore.QRect(150, 120, 351, 351))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("icons/Picture1.png"))
         self.label.setScaledContents(False)
