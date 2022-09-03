@@ -95,12 +95,12 @@ border-radius:5px;
            <widget class="QFrame" name="NameSymbol">
             <property name="minimumSize">
              <size>
-              <width>400</width>
+              <width>237</width>
               <height>66</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color:grey</string>
+             <string notr="true">background-color:rgb(89, 89, 89);</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -108,6 +108,70 @@ border-radius:5px;
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="minimumSize">
+                <size>
+                 <width>10</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>57</width>
+                 <height>49</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap>icons/space-shuttle.png</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_11">
+               <property name="spacing">
+                <number>1</number>
+               </property>
+               <property name="topMargin">
+                <number>11</number>
+               </property>
+               <property name="bottomMargin">
+                <number>19</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_5">
+                 <property name="styleSheet">
+                  <string notr="true">border:none</string>
+                 </property>
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600; color:#2b2b2b;&quot;&gt;Team: NSUT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="styleSheet">
+                  <string notr="true">border:none;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600; color:#2b2b2b;&quot;&gt;Team Id: #4098&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
            </widget>
           </item>
           <item>
@@ -143,7 +207,10 @@ border-radius:5px;
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color:rgb(89, 89, 89)</string>
+                <string notr="true">background-color:rgb(89, 89, 89);
+border: solid grey;
+border-width: 0px 3px 0px 3px
+</string>
                </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
@@ -167,7 +234,7 @@ border-radius:5px;
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border: 8px solid white;
+                   <string notr="true">border: 6px solid white;
 border-radius:12px
 </string>
                   </property>
@@ -196,8 +263,11 @@ border-radius:12px
                     <bold>true</bold>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none</string>
+                  </property>
                   <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b6b6b6;&quot;&gt;SIM Enable&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b6b6b6;&quot;&gt;Set Time&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
@@ -219,7 +289,9 @@ border-radius:12px
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color:rgb(89, 89, 89)</string>
+                <string notr="true">background-color:rgb(89, 89, 89);
+border: solid grey;
+border-width: 0px 3px 0px 0px</string>
                </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
@@ -243,8 +315,8 @@ border-radius:12px
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border: 8px solid white;
-border-radius:12px
+                   <string notr="true">border: 6px solid white;
+border-radius:12px;
 </string>
                   </property>
                   <property name="text">
@@ -272,8 +344,11 @@ border-radius:12px
                     <bold>true</bold>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none</string>
+                  </property>
                   <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b6b6b6;&quot;&gt;SIM Enable&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b6b6b6;&quot;&gt;Callibrate&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
@@ -295,7 +370,9 @@ border-radius:12px
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color:rgb(89, 89, 89)</string>
+                <string notr="true">background-color:rgb(89, 89, 89);
+border: solid grey;
+border-width: 0px 3px 0px 0px</string>
                </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
@@ -319,7 +396,7 @@ border-radius:12px
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border: 8px solid white;
+                   <string notr="true">border: 6px solid white;
 border-radius:12px
 </string>
                   </property>
@@ -348,6 +425,9 @@ border-radius:12px
                     <bold>true</bold>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none</string>
+                  </property>
                   <property name="text">
                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b6b6b6;&quot;&gt;SIM Enable&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
@@ -371,7 +451,9 @@ border-radius:12px
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color:rgb(89, 89, 89)</string>
+                <string notr="true">background-color:rgb(89, 89, 89);
+border: solid grey;
+border-width: 0px 3px 0px 0px</string>
                </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
@@ -395,7 +477,7 @@ border-radius:12px
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border: 8px solid white;
+                   <string notr="true">border: 6px solid white;
 border-radius:12px
 </string>
                   </property>
@@ -424,8 +506,11 @@ border-radius:12px
                     <bold>true</bold>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none</string>
+                  </property>
                   <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b6b6b6;&quot;&gt;SIM Enable&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b6b6b6;&quot;&gt;SIM Disable&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
@@ -447,7 +532,9 @@ border-radius:12px
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color:rgb(89, 89, 89)</string>
+                <string notr="true">background-color:rgb(89, 89, 89);
+border: solid grey;
+border-width: 0px 3px 0px 0px</string>
                </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
@@ -471,7 +558,7 @@ border-radius:12px
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border: 8px solid white;
+                   <string notr="true">border: 6px solid white;
 border-radius:12px
 </string>
                   </property>
@@ -500,8 +587,11 @@ border-radius:12px
                     <bold>true</bold>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none</string>
+                  </property>
                   <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b6b6b6;&quot;&gt;SIM Enable&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b6b6b6;&quot;&gt;SIM Activate&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
@@ -523,7 +613,9 @@ border-radius:12px
                 </size>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color:rgb(89, 89, 89)</string>
+                <string notr="true">background-color:rgb(89, 89, 89);
+border: solid grey;
+border-width: 0px 3px 0px 0px</string>
                </property>
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
@@ -547,7 +639,7 @@ border-radius:12px
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border: 8px solid white;
+                   <string notr="true">border: 6px solid white;
 border-radius:12px
 </string>
                   </property>
@@ -576,8 +668,11 @@ border-radius:12px
                     <bold>true</bold>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none</string>
+                  </property>
                   <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b6b6b6;&quot;&gt;SIM Enable&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b6b6b6;&quot;&gt;On/Off&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
@@ -591,12 +686,12 @@ border-radius:12px
            <widget class="QFrame" name="Packetstime">
             <property name="minimumSize">
              <size>
-              <width>334</width>
+              <width>301</width>
               <height>70</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color:#2A2A2A</string>
+             <string notr="true">background-color:rgb(42, 42, 42)</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
