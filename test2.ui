@@ -814,7 +814,7 @@ border-radius:12px
              <property name="geometry">
               <rect>
                <x>0</x>
-               <y>0</y>
+               <y>-789</y>
                <width>1629</width>
                <height>1589</height>
               </rect>
@@ -889,7 +889,7 @@ border-radius:12px
                         <rect>
                          <x>90</x>
                          <y>10</y>
-                         <width>131</width>
+                         <width>141</width>
                          <height>31</height>
                         </rect>
                        </property>
@@ -900,7 +900,7 @@ border-radius:12px
          font-weight:600;</string>
                        </property>
                        <property name="text">
-                        <string>            GNSS</string>
+                        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#b3b3b3;&quot;&gt;GNSS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                        </property>
                       </widget>
                       <widget class="QFrame" name="frame_16">
@@ -1214,7 +1214,19 @@ border: 1 px solid #FF9933;</string>
                    <layout class="QVBoxLayout" name="verticalLayout_8">
                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
                      <widget class="QFrame" name="frame_17">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
                       <property name="minimumSize">
+                       <size>
+                        <width>300</width>
+                        <height>179</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
                        <size>
                         <width>300</width>
                         <height>179</height>
@@ -1403,7 +1415,7 @@ border: 1 px solid #FF9933;</string>
          font-weight:600;</string>
                          </property>
                          <property name="text">
-                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#222222;&quot;&gt;SOFTWARE STATE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#c1c1c1;&quot;&gt;SOFTWARE STATE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                          </property>
                         </widget>
                        </item>
@@ -1709,24 +1721,95 @@ border: 1 px solid #FF9933;</string>
                       <property name="frameShadow">
                        <enum>QFrame::Raised</enum>
                       </property>
-                      <widget class="QLabel" name="label">
+                      <widget class="QFrame" name="frame_38">
                        <property name="geometry">
                         <rect>
-                         <x>70</x>
-                         <y>20</y>
-                         <width>591</width>
-                         <height>611</height>
+                         <x>30</x>
+                         <y>30</y>
+                         <width>621</width>
+                         <height>581</height>
                         </rect>
                        </property>
-                       <property name="text">
-                        <string/>
+                       <property name="minimumSize">
+                        <size>
+                         <width>100</width>
+                         <height>100</height>
+                        </size>
                        </property>
-                       <property name="pixmap">
-                        <pixmap>icons/Picture1.png</pixmap>
+                       <property name="maximumSize">
+                        <size>
+                         <width>747</width>
+                         <height>16777215</height>
+                        </size>
                        </property>
-                       <property name="scaledContents">
-                        <bool>false</bool>
+                       <property name="styleSheet">
+                        <string notr="true">
+               color:white;
+               background-color:#1d1f1f;
+               font-size:14px;
+               font-weight:500;</string>
                        </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <widget class="QLabel" name="label">
+                        <property name="geometry">
+                         <rect>
+                          <x>40</x>
+                          <y>30</y>
+                          <width>544</width>
+                          <height>412</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">border:5px solid black;</string>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap>icons/Picture1.png</pixmap>
+                        </property>
+                        <property name="scaledContents">
+                         <bool>false</bool>
+                        </property>
+                       </widget>
+                       <widget class="QPushButton" name="pushButton_8">
+                        <property name="geometry">
+                         <rect>
+                          <x>220</x>
+                          <y>480</y>
+                          <width>181</width>
+                          <height>41</height>
+                         </rect>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true"> QPushButton{
+               border-radius:0;
+               color:white;
+background-color:#1d1f1f;
+              
+               font-size:14px;
+               font-weight:500;
+               transition:2s;border: 3px solid orange;
+         }
+         QPushButton:hover{
+				 background-color:#595959;
+               change-cursor: cursor('PointingHand');
+               
+         }
+         QPushButton:pressed{
+               background-color:#595959;
+         }
+         </string>
+                        </property>
+                        <property name="text">
+                         <string>DETECT LOCATION</string>
+                        </property>
+                       </widget>
                       </widget>
                      </widget>
                     </item>
@@ -1763,12 +1846,18 @@ border: 1 px solid #FF9933;</string>
                       <property name="frameShadow">
                        <enum>QFrame::Raised</enum>
                       </property>
-                      <layout class="QVBoxLayout" name="verticalLayout_12">
+                      <layout class="QHBoxLayout" name="horizontalLayout_13">
                        <item>
                         <widget class="QFrame" name="frame_33">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>100</height>
+                          </size>
+                         </property>
                          <property name="maximumSize">
                           <size>
-                           <width>735</width>
+                           <width>747</width>
                            <height>16777215</height>
                           </size>
                          </property>
@@ -1851,6 +1940,85 @@ border: 1 px solid #FF9933;</string>
                       <property name="frameShadow">
                        <enum>QFrame::Raised</enum>
                       </property>
+                      <widget class="QFrame" name="frame_34">
+                       <property name="geometry">
+                        <rect>
+                         <x>10</x>
+                         <y>10</y>
+                         <width>745</width>
+                         <height>278</height>
+                        </rect>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>100</width>
+                         <height>100</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>747</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">border-radius:0;
+               color:white;
+               background-color:#1d1f1f;
+               font-size:14px;
+               font-weight:500;</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_28">
+                        <item>
+                         <widget class="QLabel" name="label_31">
+                          <property name="text">
+                           <string>                    MODE                     :                       NA                       </string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_32">
+                          <property name="text">
+                           <string>                    MODE                     :                       NA                        </string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_33">
+                          <property name="text">
+                           <string>                    MODE                     :                       NA                 </string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_40">
+                          <property name="text">
+                           <string>                    MODE                     :                       NA                        </string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_41">
+                          <property name="text">
+                           <string>                    MODE                     :                       NA                     </string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_42">
+                          <property name="text">
+                           <string>                    MODE                     :                       NA                             </string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
                      </widget>
                     </item>
                    </layout>
@@ -1873,7 +2041,7 @@ border: 1 px solid #FF9933;</string>
      </widget>
     </item>
    </layout>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
