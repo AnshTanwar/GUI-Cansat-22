@@ -1325,7 +1325,7 @@ class Ui_MainWindow(object):
                 
                 
                 #SLIDING X AXIS TO THE LEFT
-                #plt.xlim(position-10, position)
+                plt.xlim(position-10, position)
 
         else:
                 plt.cla() 
@@ -1359,7 +1359,7 @@ class Ui_MainWindow(object):
         data = pd.read_csv("C:\\Users\\ansht\\AppData\\Local\\Programs\\Python\\Python39\\GUIII\\TEAM_INDIA\\graph.csv",header=None)
 
         
-        data_list = list(data[6])
+        data_list = list(data[0])
         ani = FuncAnimation(plt.gcf(), self.animate ,interval=1000)
         #get current axes
         ax = plt.gca()
