@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(1716, 1030)
         MainWindow.setStyleSheet("background-color:#303030")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
-        self.centralwidget.setObjectName("centralwidget")
+        self.centralwidget.setObjectName("centralwidget")#1
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout.setObjectName("verticalLayout")
         self.frame = QtWidgets.QFrame(self.centralwidget)
