@@ -760,7 +760,7 @@ class Ui_MainWindow(object):
         self.figure.patch.set_alpha(0)
         self.canvas = FigureCanvas(self.figure)
         #self.canvas.setStyleSheet("background-color:transparent")
-        #canvas end
+        #canvas endd
         #adding canvas
         self.horizontalLayout_01.addWidget(self.canvas)
         #end of canvas
@@ -1309,6 +1309,8 @@ class Ui_MainWindow(object):
                 print(f"{x[position]} : {y[position]}")
                 self.label_8.setText(f"   {y[position]}")
                 self.label_35.setText(f"  {x[position]}")
+                self.label_75.setText(f"  {x[position]}")
+                self.label_78.setText(f"  {y[position]}")
                 plt.cla()  
                 #plt.xlim(0,100)
                 #plt.ylim(0,200)
@@ -1323,7 +1325,7 @@ class Ui_MainWindow(object):
                 
                 
                 #SLIDING X AXIS TO THE LEFT
-                plt.xlim(position-10, position)
+                #plt.xlim(position-10, position)
 
         else:
                 plt.cla() 
@@ -1354,8 +1356,10 @@ class Ui_MainWindow(object):
         plt.title('TITLE')
         plt.ylabel('DATA')
         plt.xlabel('TIME')
-        data = pd.read_csv("C:\\Users\\ansht\\AppData\\Local\\Programs\\Python\\Python39\\GUIII\\graph\\graph.csv",header=None)
-        data_list = list(data[5])
+        data = pd.read_csv("C:\\Users\\ansht\\AppData\\Local\\Programs\\Python\\Python39\\GUIII\\TEAM_INDIA\\graph.csv",header=None)
+
+        
+        data_list = list(data[6])
         ani = FuncAnimation(plt.gcf(), self.animate ,interval=1000)
         #get current axes
         ax = plt.gca()
