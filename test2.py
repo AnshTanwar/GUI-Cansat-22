@@ -95,6 +95,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_11.setSpacing(1)
         self.verticalLayout_11.setObjectName("verticalLayout_11")
         self.label_5 = QtWidgets.QLabel(self.NameSymbol)
+        self.label_5
         self.label_5.setStyleSheet("\n"
 "\n"
 "Qlabel{\n"
@@ -1238,6 +1239,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Team ID: _____ </span></p></body></html>"))
         self.label_3.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Packet: _____</span></p></body></html>"))
         self.label_4.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Time: _____</span></p></body></html>"))
+        self.label_5.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ffffff;\">Software State</span></p></body></html>"))
         self.label_61.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#b3b3b3;\">GNSS</span></p></body></html>"))
         self.label_71.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" color:#505050;\">ALTITUDE</span></p></body></html>"))
         self.label_8.setText(_translate("MainWindow", "<html><head/><body><p align=\"right\">200</p></body></html>"))
@@ -1316,7 +1318,7 @@ class Ui_MainWindow(object):
                 #plt.ylim(0,200)
                 #plt.scatter(x,y)
                 plt.plot(x,y,color='#FF5733',)
-                plt.stackplot(x,y,colors='orange',alpha=0.2)    
+                plt.stackplot(x,y,colors='orange',alpha=0.1)    
                 #plt.legend(['Altitude'],loc='upper left')
                 plt.title(label="Atltitude",
                 fontsize=10,
@@ -1359,7 +1361,7 @@ class Ui_MainWindow(object):
         data = pd.read_csv("C:\\Users\\ansht\\AppData\\Local\\Programs\\Python\\Python39\\GUIII\\TEAM_INDIA\\graph.csv",header=None)
 
         
-        data_list = list(data[0])
+        data_list = list(data[5])
         ani = FuncAnimation(plt.gcf(), self.animate ,interval=1000)
         #get current axes
         ax = plt.gca()
@@ -1372,6 +1374,7 @@ class Ui_MainWindow(object):
        
         self.canvas.draw()
         self.canvas2.draw()
+        self.canvas.draw()
 
 
    
