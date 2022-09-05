@@ -1327,7 +1327,7 @@ class Ui_MainWindow(object):
                 
                 
                 #SLIDING X AXIS TO THE LEFT
-                plt.xlim(position-10, position)
+                #plt.xlim(position-10, position)
 
         else:
                 plt.cla() 
@@ -1354,7 +1354,7 @@ class Ui_MainWindow(object):
         global x,y,ani,data_list
         x = []
         y = []
-        fig = plt.figure(figsize=(8,4))
+        #fig = plt.figure(figsize=(8,4))
         plt.title('TITLE')
         plt.ylabel('DATA')
         plt.xlabel('TIME')
