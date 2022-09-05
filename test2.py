@@ -1361,7 +1361,7 @@ class Ui_MainWindow(object):
         data = pd.read_csv("C:\\Users\\ansht\\AppData\\Local\\Programs\\Python\\Python39\\GUIII\\TEAM_INDIA\\graph.csv",header=None)
 
         
-        data_list = list(data[4])
+        data_list = list(data[5])
         ani = FuncAnimation(plt.gcf(), self.animate ,interval=1000)
         #get current axes
         ax = plt.gca()
