@@ -1354,7 +1354,7 @@ class Ui_MainWindow(object):
         global x,y,ani,data_list
         x = []
         y = []
-        #fig = plt.figure(figsize=(8,4))
+        fig = plt.figure(figsize=(8,4))
         plt.title('TITLE')
         plt.ylabel('DATA')
         plt.xlabel('TIME')
@@ -1371,7 +1371,7 @@ class Ui_MainWindow(object):
         ax.get_yaxis().set_visible(False)
         plt.box(False)
         #self.canvas.setStyleSheet("background-color:transparent;")
-       
+        #hello_wrold
         self.canvas.draw()
         self.canvas2.draw()
         self.canvas.draw()
