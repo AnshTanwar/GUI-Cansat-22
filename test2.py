@@ -10,7 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import pandas as pd
-import numpy as np
+import numpy as np#d
 from itertools import count
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
