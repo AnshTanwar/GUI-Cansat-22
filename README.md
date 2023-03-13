@@ -3,10 +3,9 @@
 ![image](https://user-images.githubusercontent.com/97782299/224738854-64b41de5-f63b-4b63-a2ed-29db06b13e20.png)
 
 
-![image](https://user-images.githubusercontent.com/97782299/224656194-d6ecbf0e-93e8-4a4f-a004-7e7f565b2a96.png)
+![image](https://user-images.githubusercontent.com/97782299/224739272-90bd0bdc-fee9-47b4-8cd6-f85c5ea5dfd8.png)
 
 
-![image](https://user-images.githubusercontent.com/97782299/224656436-b2b8c22f-d935-49fb-88d8-c22086cab8cc.png)
 
 ## This Graphical User Interface is built for CANSAT 2022, Team KALPANA NSUT, New Delhi. 
 
