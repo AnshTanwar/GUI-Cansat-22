@@ -1,5 +1,8 @@
 # GUI built in PyQt (Python) for a Can-Sized Sattelite (CanSat)
 
+![image](https://user-images.githubusercontent.com/97782299/224738854-64b41de5-f63b-4b63-a2ed-29db06b13e20.png)
+
+
 ![image](https://user-images.githubusercontent.com/97782299/224656194-d6ecbf0e-93e8-4a4f-a004-7e7f565b2a96.png)
 
 
