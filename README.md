@@ -1,7 +1,9 @@
 # GUI built in PyQt (Python) for a Can-Sized Sattelite (CanSat)
 
-```This is not our main GUI```
-```A different GUI was used in the Cansat 22 Competion```
+'''
+This is not our main GUI.
+ A different GUI was used in the Cansat 22 Competion
+'''
 
 
 ![image](https://user-images.githubusercontent.com/97782299/224738854-64b41de5-f63b-4b63-a2ed-29db06b13e20.png)
