@@ -51,7 +51,7 @@ indicates 1:14:02.22 PM.
 3. **PACKET_COUNT** is the total count of transmitted packets since turn on, which is to be
 reset to zero by command when the CanSat is installed in the rocket on the launch pad
 at the beginning of the mission and maintained through processor reset.
-4. **MODE** = ‘F’ for flight mode and ‘S’ for simulation mode.
+4. **MODE** = ‘F’ for flight mode and ‘S’ for simulation mode. 
 5. **STATE** is the operating state of the software. (e.g., LAUNCH_WAIT, ASCENT,
 ROCKET_SEPARATION, DESCENT, HS_RELEASE, LANDED, etc.). Teams may
 define their own states. This should be a human readable description as the judges
